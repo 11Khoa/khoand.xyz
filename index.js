@@ -12,9 +12,18 @@ function setRandomColor() {
     item.forEach(element => {
         element.style.backgroundColor = getRandomColor();
     });
-
 }
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+}
+
 setRandomColor()
-setInterval(() => {
-    setRandomColor()
-}, 5000);
+var li=document.querySelectorAll('li')
+li.forEach(element => {
+    setInterval(() => {
+        element.style.transform = `scale(${getRandomInt(-1,1)},${getRandomInt(-1,1)})`
+        setRandomColor()
+    }, 5000);
+});
