@@ -25,5 +25,5 @@ li.forEach(element => {
     setInterval(() => {
         element.style.transform = `scale(${getRandomInt(-1,1)},${getRandomInt(-1,1)})`
         setRandomColor()
-    }, 5000);
+    }, 2500);
 });
