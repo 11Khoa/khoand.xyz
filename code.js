@@ -10,6 +10,5 @@ for( i=0 ; i<keykhoa.length ; i++ ){
 }
 if(bienkiemtra == 0){
 	jQuery('html').remove();
-	//window.location.replace("https://webminhthuan.com/thiet-ke-web.html");
 }
 //jQuery('.primarykey').remove();
